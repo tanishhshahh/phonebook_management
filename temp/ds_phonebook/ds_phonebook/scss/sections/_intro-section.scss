@@ -1,0 +1,285 @@
+@use "../custom" as *;
+@use "../components/mixins" as *;
+
+.body {
+  font-family: "Poppins", sans-serif !important;
+}
+
+.inpe {
+  margin-top: 10px;
+  margin-left: 70px;
+  border: 0 !important;
+  outline: 0 !important;
+  background: transparent !important;
+  border-bottom: 1px solid white !important;
+}
+
+.pb {
+  font-family: "Poppins";
+  margin-bottom: 50px;
+  color: #333;
+}
+
+.sc {
+  margin-left: 40px;
+  font-size: larger;
+}
+
+.phone {
+  font-weight: bold;
+  font-size: 55px;
+}
+
+.intro-section {
+  @include gradient;
+  padding: 35px;
+  margin: 0px;
+}
+
+.intros {
+  .video-box {
+    position: relative;
+    a {
+      @include absoluteCenter;
+      span {
+        i {
+          font-size: 6rem;
+          color: $black;
+          color: $secondary;
+        }
+      }
+    }
+  }
+}
+
+.border-animation {
+  position: absolute;
+  width: 6rem;
+  height: 6rem;
+  border: 0.55rem solid white;
+  border-radius: 50%;
+  top: 0;
+  left: 0;
+  animation: pulse-border 1.5s linear infinite;
+
+  &--border-1 {
+    animation-delay: 1s;
+  }
+
+  &--border-2 {
+    animation-delay: 1.5s;
+  }
+}
+
+.booking-form-box {
+  max-width: 550px;
+  border: 5px solid #ced4da;
+  margin: 20px auto 0;
+  margin-bottom: 50px !important;
+  padding: 10px;
+  position: relative;
+
+  text-align: center;
+}
+
+.radio-btn {
+  margin: 0 20px;
+  width: auto;
+  padding: 5px;
+}
+
+.radio-btn .btn {
+  margin: 20px 10px 20px 0;
+  box-shadow: none;
+}
+
+.radio-btn .btn::after {
+  content: "";
+  height: 15px;
+  width: 15px;
+  top: 20px;
+  left: -100px;
+
+  background-color: #fff;
+  position: relative;
+  display: inline-block;
+  border: 3px solid #fff;
+  visibility: visible;
+  border-radius: 50%;
+}
+
+// .radio-btn .btn:checked::after {
+//   content: "";
+//   background-color: #000;
+//   transition: 0.5s;
+// }
+.contra {
+  min-width: 500px;
+  font-family: "Poppins" !important;
+}
+
+.lab {
+  margin-top: 0.1px !important;
+  font-family: "Poppins" !important;
+}
+
+.inp {
+  transition: 0.5s;
+}
+
+.booking-form {
+  padding: 0 20px 20px;
+}
+
+.booking-form-label {
+  margin-bottom: 5px;
+  margin-top: 10px;
+  font-size: 12px;
+  color: #fff;
+}
+
+.input-grp {
+  width: 200px;
+  display: inline-block;
+  position: relative;
+  margin-right: 15px;
+  margin-top: 10px;
+  margin-bottom: 2px;
+}
+
+.form-control {
+  font-size: 12px !important;
+  border-radius: 0 !important;
+  box-shadow: none !important;
+  background: transparent !important;
+}
+
+.select-date::--webkit-inner-spin-button,
+.select-date::--webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+body {
+  margin: 0;
+  font-family: "Poppins" !important;
+}
+
+html {
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+.select-date.select-date::--webkit-datetime-edit {
+  color: #fff !important;
+}
+
+.select-date::--webkit-calendar-picker-indicator {
+  background: transparent !important;
+}
+
+::-webkit-input-placeholder {
+  opacity: 0.5;
+  color: #333;
+}
+:focus::-webkit-input-placeholder {
+  opacity: 0.5;
+  color: #333;
+}
+
+.custom-select {
+  margin-top: 20px;
+  color: #fff !important;
+  font-size: 12px !important  ;
+  border: 1px solid #ced4da !important;
+  box-shadow: none !important;
+  border-radius: 0 !important;
+  background: transparent !important;
+}
+
+.custom-select option {
+  color: #333;
+}
+
+.addContact {
+  width: 100%;
+  padding: 9px 0;
+  font-size: 12px;
+  border: 1px solid #ffff !important;
+  background: transparent !important;
+  box-shadow: none !important;
+  border-radius: 0 !important;
+  margin-top: 5px;
+}
+
+.addContact:hover {
+  background: #fff !important;
+  color: #000 !important;
+  transition: 0.5s;
+}
+
+input,
+select,
+textarea {
+  color: #fff !important;
+}
+
+.big-banner {
+  padding-bottom: 5px;
+}
+
+.input-grp i {
+  position: absolute;
+  top: 40px;
+  right: 10px;
+  visibility: hidden;
+}
+
+.input-grp small {
+  visibility: hidden;
+}
+
+.big-banner {
+  position: relative;
+}
+
+.input-grp.success input {
+  border-color: #2ecc71;
+}
+
+.input-grp.success i.fa-check-circle {
+  visibility: visible;
+  color: #2ecc71;
+}
+.input-grp.error input {
+  border-color: #e74c3c;
+}
+.input-grp.error i.fa-exclamation-circle {
+  color: #e74c3c;
+  visibility: visible;
+}
+
+.input-grp.error small {
+  color: #e74c3c;
+  visibility: visible;
+}
+
+.success_msg {
+  font-size: smaller !important;
+}
+
+.Contact {
+  margin-bottom: 5px;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+}
+
+.contact-tab {
+  width: 100% !important;
+}
